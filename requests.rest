@@ -1,0 +1,43 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWJjIiwicGFzc3dvcmQiOiIkMmIkMTAkYzdGVjJNWS5tM1dLUUI2LnJGS1kwdUhJZVQwS2h2SUZIaDAyVE13T0pOQ3d5dUZHOUFFUWUiLCJpYXQiOjE2Njg4NDE5OTYsImV4cCI6MTY2ODg0MjI5Nn0._Vw41itTyap1WSy3n4tz5Upns5DTtC4lLGlS8_BKYKc
+###
+GET http://localhost:4000/users
+
+###Add user
+POST http://localhost:4000/users   
+Content-Type: application/json
+
+{
+    "name": "Abc",
+    "password":"password12"
+}
+
+###
+POST http://localhost:4000/token  
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWJjIiwicGFzc3dvcmQiOiIkMmIkMTAkYzdGVjJNWS5tM1dLUUI2LnJGS1kwdUhJZVQwS2h2SUZIaDAyVE13T0pOQ3d5dUZHOUFFUWUiLCJpYXQiOjE2Njg4NDE5OTZ9.eSrhx-ssdfDwd2m3RjF9I41M_BQ2eTQ6Yu5BAzs9pCI",
+    
+}
+
+
+###
+POST http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+    "name": "Abc",
+    "password":"password12"
+    
+}
+
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token":
+}
+
+
